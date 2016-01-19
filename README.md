@@ -1,5 +1,5 @@
-# spring-online-payments
-Spring MVC online payments demo (2016)
+# spring-online-payments (2016)
+Spring MVC online payments demo
 
 http://ec2-52-16-13-114.eu-west-1.compute.amazonaws.com:8080/spring-online-payments/stripe
 
