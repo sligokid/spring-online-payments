@@ -36,8 +36,15 @@
         <dependency>
   			<groupId>com.stripe</groupId>
   			<artifactId>stripe-java</artifactId>
-  		<version>1.41.0</version>
-</dependency>
+  			<version>1.41.0</version>
+		</dependency>
+  		
+   		<dependency> 
+   			<groupId>com.realexpayments.hpp.sdk</groupId> 
+   			<artifactId>rxp-hpp-java</artifactId> 
+   			<version>1.0</version> 
+   		</dependency>
+  		
     </dependencies>
 
     <build>

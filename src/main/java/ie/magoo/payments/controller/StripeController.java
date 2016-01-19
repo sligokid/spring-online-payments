@@ -40,7 +40,7 @@ public class StripeController {
 
 		model.addAttribute("cur", "eur");
 		model.addAttribute("amt", "100000");
-		return "stripe";
+		return "index";
 	}
 
 	private void processPayment(Map<String, String> request, String token) {

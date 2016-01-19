@@ -6,6 +6,7 @@
 </head>
 <body>
 
+<h4>Stripe Checkout</h4>
 To see Checkout in action, click the button below, filling in the resulting form with:
 <br/>
 <ul>
@@ -14,7 +15,7 @@ To see Checkout in action, click the button below, filling in the resulting form
 	<li>Any three digit CVC code</li>
 	<li>Any expiration date in the future</li>
 	<li>
-		<form action="" method="POST">
+		<form action="/spring-online-payments/stripe" method="POST">
   			<script th:inline="javascript"
   				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
    				data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
@@ -33,6 +34,26 @@ To see Checkout in action, click the button below, filling in the resulting form
 </ul>
 
 <a href="https://stripe.com/docs/tutorials/checkout">https://stripe.com/docs/tutorials/checkout</a>
+
+<br />
+<h4>Realex Hpp</h4>
+
+    <script src="/spring-online-payments/resources/js/jquery-1.11.3.min.js"></script>
+    <script src="/spring-online-payments/resources/js/rxp-js.js"></script>
+    <script>
+    // get the HPP JSON from the server-side SDK
+        $(document).ready(function () {
+            $.getJSON("/spring-online-payments/realex", function (jsonFromServerSdk) {
+                RealexHpp.init("payButtonId", "responseUrl", jsonFromServerSdk);
+            });
+        });
+    </script>
+
+	<button type="button" id="payButtonId">Checkout Now</button>
+
+<br />
+<br />
+<a href="https://developer.realexpayments.com">https://developer.realexpayments.com</a>
 
 </body>
 </html>
