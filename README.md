@@ -1,6 +1,8 @@
 # spring-online-payments
 Spring MVC online payments demo
 
+http://ec2-52-16-13-114.eu-west-1.compute.amazonaws.com:8080/spring-online-payments/stripe
+
 Java + Spring MVC + Stripe API
 
 Packaged as spring-online-payments.war via maven 
