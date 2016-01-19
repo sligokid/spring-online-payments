@@ -33,6 +33,11 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+  			<groupId>com.stripe</groupId>
+  			<artifactId>stripe-java</artifactId>
+  		<version>1.41.0</version>
+</dependency>
     </dependencies>
 
     <build>

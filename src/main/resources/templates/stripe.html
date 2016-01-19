@@ -5,16 +5,34 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<form action="" method="POST">
-  		<script
-  			src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-   			data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-    		data-amount="5000"
-  	  		data-name="Stripe Checkout Demo"
-    		data-description="2 widgets ($50.00)"
-    		data-image="/spring-online-payments/resources/img/magoo.jpeg"
-    		data-locale="auto">
-  		</script>
-	</form>
+
+To see Checkout in action, click the button below, filling in the resulting form with:
+<br/>
+<ul>
+	<li>Any random, syntactically valid email address (the more random, the better)</li>
+	<li>One of Stripe's test card numbers, such as 4242 4242 4242 4242</li>
+	<li>Any three digit CVC code</li>
+	<li>Any expiration date in the future</li>
+	<li>
+		<form action="" method="POST">
+  			<script th:inline="javascript"
+  				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+   				data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+    			data-currency="eur"
+    			data-amount="10000"
+  	  			data-name="Stripe Checkout Demo"
+    			data-description="Demo"
+    			data-image="/spring-online-payments/resources/img/magoo.jpeg"
+    			data-locale="auto"
+    			data-bitcoin="true"
+    			data-alipay="true">
+  		
+  			</script>
+		</form>
+		</li>
+</ul>
+
+<a href="https://stripe.com/docs/tutorials/checkout">https://stripe.com/docs/tutorials/checkout</a>
+
 </body>
 </html>
