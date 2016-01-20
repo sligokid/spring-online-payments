@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head> 
-    <title>Stripe checkout demo</title> 
+    <title>Online Payments Showcase</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 
 <h4>Stripe Checkout</h4>
-
 
 To see Checkout in action, click the button below, filling in the resulting form with:
 <br/>
@@ -43,6 +42,8 @@ To see Checkout in action, click the button below, filling in the resulting form
 
 <h4>Realex Hosted Payments Page - HPP</h4>
 
+To see HPP in action, click the button below, filling in the resulting form with:
+<br/>
     <ul>
 		<li>Any random, syntactically valid email address (the more random, the better)</li>
 		<li>One of Realex's test card numbers, such as 4263970000005262</li>
@@ -69,5 +70,58 @@ To see Checkout in action, click the button below, filling in the resulting form
 <br />
 	<a href ="https://www.realexpayments.com" target="_new"><img src ="/spring-online-payments/resources/img/rlx_gen_logo.jpg" /></a>
 <br />
+
+<h4>Ebay Buy Now</h4>
+
+To see Buy Now in action, click the button below:
+<br/>
+<ul>
+	<li>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick" />
+			<input type="hidden" name="hosted_button_id" value="3EF497PHADXWU" />
+			<table>
+				<tr>
+					<td>
+						<input type="hidden" name="on0" value="Donate to Magoo" />Donate to Magoo
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<select name="os0">
+							<option value="Breakfast">Breakfast €5.00 EUR</option>
+							<option value="Lunch">Lunch €10.00 EUR</option>
+							<option value="Dinner">Dinner €20.00 EUR</option>
+						</select> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="hidden" name="on1" value="Your message" />Your message
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="os1" maxlength="200" />
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="currency_code" value="EUR" />
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+		</form>
+	</li>
+</ul>
+
+<br />
+	<a href="https://www.paypal.com/ie/webapps/mpp/express-checkout">https://www.paypal.com/ie/webapps/mpp/express-checkout</a>
+<br />
+<br />
+	<a href ="https://www.ebay.com" target="_new"><img src ="/spring-online-payments/resources/img/ebay.jpeg" width="150" /></a>
+<br />
+
+
+
+
 </body>
 </html>
