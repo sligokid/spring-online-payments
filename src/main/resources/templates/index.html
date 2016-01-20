@@ -7,6 +7,8 @@
 <body>
 
 <h4>Stripe Checkout</h4>
+
+
 To see Checkout in action, click the button below, filling in the resulting form with:
 <br/>
 <ul>
@@ -34,26 +36,38 @@ To see Checkout in action, click the button below, filling in the resulting form
 </ul>
 
 <a href="https://stripe.com/docs/tutorials/checkout">https://stripe.com/docs/tutorials/checkout</a>
-
+<br/>
+<br/>
+<a href ="http://www.stripe.com" target="_new"><img src ="/spring-online-payments/resources/img/outline.png" /></a>
 <br />
-<h4>Realex Hpp</h4>
 
-    <script src="/spring-online-payments/resources/js/jquery-1.11.3.min.js"></script>
-    <script src="/spring-online-payments/resources/js/rxp-js.js"></script>
-    <script>
-    // get the HPP JSON from the server-side SDK
-        $(document).ready(function () {
-            $.getJSON("/spring-online-payments/realex", function (jsonFromServerSdk) {
-                RealexHpp.init("payButtonId", "responseUrl", jsonFromServerSdk);
-            });
-        });
-    </script>
+<h4>Realex Hosted Payments Page - HPP</h4>
 
+    <ul>
+		<li>Any random, syntactically valid email address (the more random, the better)</li>
+		<li>One of Realex's test card numbers, such as 4263970000005262</li>
+		<li>Any three digit CVC code</li>
+		<li>Any expiration date in the future</li>
+	</ul>
+    		<script src="/spring-online-payments/resources/js/jquery-1.11.3.min.js"></script>
+    		<script src="/spring-online-payments/resources/js/rxp-js.js"></script>
+    		<script>
+    		// get the HPP JSON from the server-side SDK
+        		$(document).ready(function () {
+            		$.getJSON("/spring-online-payments/realex", function (jsonFromServerSdk) {
+                	RealexHpp.init("payButtonId", "responseUrl", jsonFromServerSdk);
+            	});
+        	});
+    		</script>
+	
 	<button type="button" id="payButtonId">Checkout Now</button>
 
 <br />
 <br />
-<a href="https://developer.realexpayments.com">https://developer.realexpayments.com</a>
-
+	<a href="https://developer.realexpayments.com">https://developer.realexpayments.com</a>
+<br />
+<br />
+	<a href ="https://www.realexpayments.com" target="_new"><img src ="/spring-online-payments/resources/img/rlx_gen_logo.jpg" /></a>
+<br />
 </body>
 </html>
