@@ -26,7 +26,7 @@ public class RealexController {
 		HppRequest hppRequest = new HppRequest();
 		hppRequest.addAmount(100);
 		hppRequest.addCurrency("GBP");
-		hppRequest.addMerchantId("realexsandbox");
+		hppRequest.addMerchantId("kieranmcgowan");
 
 		RealexHpp realexHpp = new RealexHpp("secret");
 		String requestJson = realexHpp.requestToJson(hppRequest);
