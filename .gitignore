@@ -3,3 +3,12 @@
 *.log
 *.term
 *.class
+.classpath
+.project
+.settings/*
+*.prefs
+*.component
+
+.classpath
+
+.settings/org.eclipse.jdt.core.prefs
