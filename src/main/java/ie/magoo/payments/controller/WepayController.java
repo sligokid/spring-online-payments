@@ -24,7 +24,7 @@ import com.lookfirst.wepay.api.req.CheckoutCreateRequest;
 /**
  * The Class IndexController.
  * 
- * Render the stripe page and process any submitted payment.
+ * Render the wepay hosted page and process any submitted payment.
  */
 @Controller
 public class WepayController {
@@ -36,9 +36,9 @@ public class WepayController {
 	private Long clientId = (long) 173169;
 
 	private String clientSecret = "f82df2fb75";
+	private String localRedirectUrl = "http://ec2-52-16-13-114.eu-west-1.compute.amazonaws.com:8080/spring-online-payments/wepay-api-response";
 	// private String localRedirectUrl =
-	// "http://ec2-52-16-13-114.eu-west-1.compute.amazonaws.com:8080/spring-online-payments/wepay-api-response";
-	private String localRedirectUrl = "http://localhost:8080/spring-online-payments/wepay-api-response";
+	// "http://localhost:8080/spring-online-payments/wepay-api-response";
 	private String authRedirectUrl = "https://stage.wepay.com/v2/oauth2/authorize?client_id=173169&redirect_uri="
 			+ localRedirectUrl
 			+ "&scope=manage_accounts,collect_payments,view_user,send_money,preapprove_payments,manage_subscriptions";
