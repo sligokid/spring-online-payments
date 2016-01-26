@@ -21,18 +21,46 @@ public class RealexController {
 	private static Logger LOG = Logger.getLogger(RealexController.class);
 
 	@RequestMapping("/realex")
-	public String stripe(@RequestParam Map<String, String> request, Model model) {
-
+	public String realex(@RequestParam Map<String, String> request, Model model) {
 		HppRequest hppRequest = new HppRequest();
-		hppRequest.addAmount(100);
-		hppRequest.addCurrency("GBP");
-		hppRequest.addMerchantId("kieranmcgowan");
+
+		hppRequest.setMerchantId("kieranmcgowan");
+		hppRequest.setAccount("internet");
+		hppRequest.setOrderId("1231231231");
+		hppRequest.setAmount("20000");
+		hppRequest.setCurrency("GBP");
+
+		hppRequest.setCommentOne("");
+		hppRequest.setCommentTwo("");
+		hppRequest.setPayerReference("");
+		hppRequest.setProductId("123123");
+		hppRequest.setCustomerNumber("234242342");
+		hppRequest.setBillingCode("asdfsdf");
+		hppRequest.setReturnTss("");
+		hppRequest.setDccEnable("");
+		hppRequest.setVariableReference("");
+		hppRequest.setOfferSaveCard("");
+		hppRequest.setAutoSettleFlag("");
+		hppRequest.setBillingCode("");
+		hppRequest.setCardPaymentButtonText("Pay");
+		hppRequest.setValidateCardOnly("");
+		hppRequest.setPayerExists("");
+		hppRequest.setLanguage("");
+		hppRequest.setShippingCode("");
+		hppRequest.setShippingCountry("");
+		hppRequest.setBillingCountry("");
+		hppRequest.setCardStorageEnable("");
+		hppRequest.setPayerReference("");
+		hppRequest.setPaymentReference("");
 
 		RealexHpp realexHpp = new RealexHpp("secret");
 		String requestJson = realexHpp.requestToJson(hppRequest);
-
 		LOG.info(requestJson);
 		return requestJson;
 	}
 
+	@RequestMapping("/realex-api-response")
+	public String realexApiResponse(@RequestParam Map<String, String> request, Model model) {
+		return "index";
+	}
 }

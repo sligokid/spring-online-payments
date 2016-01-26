@@ -57,7 +57,7 @@ To see HPP in action, click the button below, filling in the resulting form with
     		// get the HPP JSON from the server-side SDK
         		$(document).ready(function () {
             		$.getJSON("/spring-online-payments/realex", function (jsonFromServerSdk) {
-                	RealexHpp.init("payButtonId", "responseUrl", jsonFromServerSdk);
+                	RealexHpp.init("payButtonId", "/spring-online-payments/realex-api-response", jsonFromServerSdk);
             	});
         	});
     		</script>
