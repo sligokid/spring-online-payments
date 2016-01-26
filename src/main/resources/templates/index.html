@@ -6,7 +6,7 @@
 
 </head>
 <body>
-
+<hr width="800" />
 <h4>Stripe Checkout</h4>
 
 To see Checkout in action, click the button below, filling in the resulting form with:
@@ -16,7 +16,7 @@ To see Checkout in action, click the button below, filling in the resulting form
 	<li>One of Stripe's test card numbers, such as 4242 4242 4242 4242</li>
 	<li>Any three digit CVC code</li>
 	<li>Any expiration date in the future</li>
-	<li>
+</ul>
 		<form action="/spring-online-payments/stripe" method="POST">
   			<script th:inline="javascript"
   				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -32,15 +32,14 @@ To see Checkout in action, click the button below, filling in the resulting form
   		
   			</script>
 		</form>
-		</li>
-</ul>
-
+<br/>
 <a href="https://stripe.com/docs/tutorials/checkout">https://stripe.com/docs/tutorials/checkout</a>
 <br/>
 <br/>
 <a href ="http://www.stripe.com" target="_new"><img src ="/spring-online-payments/resources/img/outline.png" /></a>
 <br />
 
+<hr width="800" />
 <h4>Realex Hosted Payments Page - HPP</h4>
 
 To see HPP in action, click the button below, filling in the resulting form with:
@@ -72,8 +71,7 @@ To see HPP in action, click the button below, filling in the resulting form with
 	<a href ="https://www.realexpayments.com" target="_new"><img src ="/spring-online-payments/resources/img/rlx_gen_logo.jpg" /></a>
 <br />
 
-
-
+<hr width="800" />
 <h4>Wepay Embedded Checkout Using Iframe (API is faulty)</h4>
 
 To see Wepay in action, click the button below, filling in the resulting form :
@@ -98,14 +96,12 @@ To see Wepay in action, click the button below, filling in the resulting form :
 	<a href ="https://www.wepay.com" target="_new"><img src ="/spring-online-payments/resources/img/wepay-logo.svg" width="150"/></a>
 <br />
 
-
-
-<h4>Ebay Buy Now</h4>
+<hr width="800" />
+<h4>PayPal Buy Now</h4>
 
 To see Buy Now in action, click the button below:
 <br/>
-<ul>
-	<li>
+<br/>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 			<input type="hidden" name="cmd" value="_s-xclick" />
 			<input type="hidden" name="hosted_button_id" value="3EF497PHADXWU" />
@@ -139,18 +135,13 @@ To see Buy Now in action, click the button below:
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 		</form>
-	</li>
-</ul>
 
 <br />
 	<a href="https://www.paypal.com/ie/webapps/mpp/express-checkout">https://www.paypal.com/ie/webapps/mpp/express-checkout</a>
 <br />
 <br />
-	<a href ="https://www.ebay.com" target="_new"><img src ="/spring-online-payments/resources/img/ebay.jpeg" width="150" /></a>
+	<a href ="https://www.ebay.com" target="_new"><img src ="/spring-online-payments/resources/img/paypal_logo.gif" /></a>
 <br />
-
-
-
 
 </body>
 </html>
