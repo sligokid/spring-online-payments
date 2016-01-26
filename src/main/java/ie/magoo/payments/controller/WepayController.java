@@ -29,7 +29,7 @@ import com.lookfirst.wepay.api.req.CheckoutCreateRequest;
 @Controller
 public class WepayController {
 
-	private static Logger LOG = Logger.getLogger(StripeController.class);
+	private static Logger LOG = Logger.getLogger(WepayController.class);
 
 	private boolean production = false;
 
